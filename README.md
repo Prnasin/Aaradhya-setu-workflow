@@ -6,11 +6,9 @@ Built for **Option 3** of the Aaradhya Setu Software Engineering Intern assignme
 
 **Tech stack:** Next.js 15 · React 19 · Node.js · MongoDB (Mongoose)
 
-▶ **[Watch the 1-minute demo](demo/aaradhya-setu-demo.mp4)**
+![Demo: a booking moving through all four stages](demo/aaradhya-setu-demo.gif)
 
-| Dashboard | Booking workflow & WhatsApp history |
-|---|---|
-| ![Dashboard](screenshots/02-bookings-table.jpg) | ![Booking page](screenshots/08-step4-video-available.jpg) |
+<sub>30-second walkthrough · also available as an [MP4 video](demo/aaradhya-setu-demo.mp4)</sub>
 
 ---
 
@@ -29,6 +27,31 @@ Each time the admin clicks the next action:
 2. A **WhatsApp message** is built from that stage's template, with the devotee's name, puja name and booking ID filled in.
 3. The message is **saved in MongoDB** and sent through a mock WhatsApp sender.
 4. The page updates to show the new stage and the full **message history**.
+
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/01-dashboard.jpg" alt="Dashboard"><br><b>1. Dashboard</b>: bookings at each stage</td>
+    <td width="50%"><img src="screenshots/03-new-booking-form.jpg" alt="New booking form"><br><b>2. New booking</b>: admin enters the details</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/04-booking-created.jpg" alt="Booking created"><br><b>3. Booking created</b>: confirmation message sent</td>
+    <td><img src="screenshots/05-step1-confirmed.jpg" alt="Booking Confirmed"><br><b>4. Booking Confirmed</b>: tracker and first message</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/06-step2-started.jpg" alt="Puja Started"><br><b>5. Puja Started</b>: one click, new message</td>
+    <td><img src="screenshots/07-step3-completed.jpg" alt="Puja Completed"><br><b>6. Puja Completed</b>: devotee notified</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/08-step4-video-available.jpg" alt="Video Available"><br><b>7. Video Available</b>: video link sent, workflow complete</td>
+    <td><img src="screenshots/09-notification-history.jpg" alt="Notification history"><br><b>8. Notification history</b>: every message saved in MongoDB</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/10-safety-check.jpg" alt="Outdated click refused"><br><b>9. Safety check</b>: outdated click refused, no duplicate</td>
+    <td><img src="screenshots/11-dashboard-after.jpg" alt="Dashboard after"><br><b>10. Dashboard updated</b>: booking AS-1006 complete</td>
+  </tr>
+</table>
 
 ## Features
 
